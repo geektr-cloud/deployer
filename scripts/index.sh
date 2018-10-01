@@ -2,16 +2,16 @@
 
 dp::usage() {
   tee << END
-Usage: $0 [command] project_name
-$0 deploy service for geektheripper
+Usage: deployer [command] project_name
+deployer deploy service for geektheripper
 
 Examples:
-  $0 update foo/bar           # Update service to latest or pull the service
-  $0 up foo/bar               # Start the service
-  $0 init-secrets foo/bar     # initialize secrets directory (remove if existed)
-  $0 init-data foo/bar        # initialize data directory (remove if existed)
-  $0 backup-secrets foo/bar   # backup secrets directory
-  $0 backup-data foo/bar      # backup data directory
+  deployer update foo/bar           # Update service to latest or pull the service
+  deployer up foo/bar               # Start the service
+  deployer init-secrets foo/bar     # initialize secrets directory (remove if existed)
+  deployer init-data foo/bar        # initialize data directory (remove if existed)
+  deployer backup-secrets foo/bar   # backup secrets directory
+  deployer backup-data foo/bar      # backup data directory
 
 Don't forget configure secrets files before up your service
 END
